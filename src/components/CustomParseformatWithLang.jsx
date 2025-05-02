@@ -13,7 +13,7 @@ export default function CustomParseformatWithLang() {
   const parsed = dayjs(date, formats, "km", true);
   const result = parsed.format("DD MMMM YYYY h:mm A");
 
-  const test = dayjs("1970 មករា 04", "YYYY MMMM DD", "km", true).isValid(); // false
+  const test = dayjs("1970 មករា 04", "YYYY MMMM DD", "km", true).isValid(); // false or true
   console.log("test", test);
 
   return (
